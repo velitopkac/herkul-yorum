@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Herkül Petshop | Teşekkürler</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#111,#2b2113);display:flex;align-items:center;justify-content:center;min-height:100vh;color:#fff;overflow:hidden}
+.card{max-width:430px;width:92%;background:#1b1b1bdd;border:2px solid #d4af37;border-radius:24px;padding:32px;text-align:center;box-shadow:0 0 30px rgba(212,175,55,.3)}
+.logo{width:140px;height:140px;border-radius:50%;background:#fff;border:4px solid #d4af37;object-fit:contain;display:block;margin:0 auto 18px}
+h1{color:#ffd54d;margin:8px 0}.line{width:110px;height:3px;background:#d4af37;margin:16px auto;border-radius:5px}
+.stars{font-size:32px;animation:pulse 1.8s infinite;margin:20px 0}
+@keyframes pulse{50%{transform:scale(1.1);filter:drop-shadow(0 0 8px gold)}}
+.btn{display:block;background:#d4af37;color:#111;text-decoration:none;padding:16px;border-radius:14px;font-weight:bold;font-size:20px;margin:22px 0;transition:.2s}
+.btn:hover{transform:scale(1.03)}
+.badge{display:inline-block;background:#2d2416;color:#ffd54d;border:1px solid #d4af37;padding:8px 14px;border-radius:20px;margin-top:10px}
+small{color:#bbb}
+.spark{position:fixed;opacity:.08;animation:f 8s linear infinite}
+@keyframes f{50%{transform:translateY(-40px) rotate(180deg)}100%{transform:rotate(360deg)}}
+</style></head>
+<body>
+<div class="card">
+<img src="logo.png" class="logo" alt="Logo">
+<div class="badge">🐾 Patili dostlarımız için sevgiyle</div>
+<h1>Teşekkür Ederiz ❤️</h1>
+<div class="line"></div>
+<p>Herkül Petshop'u tercih ettiğiniz için teşekkür ederiz.</p>
+<div class="stars">⭐⭐⭐⭐⭐</div>
+<p>Memnun kaldıysanız deneyiminizi Google Haritalar'da paylaşmanız bize büyük destek olur.</p>
+<a class="btn" href="https://g.page/r/CaoxFA6MIo2kEBM/review" target="_blank">⭐ Google'da Yorum Yap</a>
+<small>🐾 Her yorumunuz daha fazla patili dosta ulaşmamıza yardımcı oluyor.</small>
+</div>
+<script>
+for(let i=0;i<28;i++){let s=document.createElement('div');s.className='spark';s.textContent=Math.random()>.5?'✨':'🐾';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.fontSize=(14+Math.random()*20)+'px';s.style.animationDuration=(6+Math.random()*6)+'s';document.body.appendChild(s);}
+</script>
+</body></html>
